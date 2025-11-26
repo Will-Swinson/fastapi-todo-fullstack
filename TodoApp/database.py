@@ -1,9 +1,9 @@
-from dotenv import load_env
+from dotenv import load_dotenv
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-load_env()
+load_dotenv()
 
 # Local testing "postgresql://will@localhost:5432/todos_app"
 SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL")
